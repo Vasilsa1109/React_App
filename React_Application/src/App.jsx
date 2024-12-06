@@ -1,16 +1,22 @@
 
+import MyComponent from "./components/FirstComponent/MyComponent";
+
+
+
 function App(){
   return (
     <div>
-      <h1>Компоненты React</h1>
-      <p>Some description</p>
+      <h3>React App</h3>
+      <MyComponent  title="................ Some title" description="some description ............................... "/>
+      <MyComponent  title="................ Some title" description="some description ............................... "/>
+      <MyComponent  title="................ Some title" description="some description ............................... "/>
+      <MyComponent  title="................ Some title" description="some description ............................... "/>
+      <MyComponent  title="................ Some title" description="some description ............................... "/>
     </div>
-  );
+  )
 }
 
 export default App;
-
-
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
