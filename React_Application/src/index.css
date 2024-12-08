@@ -2,5 +2,12 @@ html, body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(175, 147, 241);
+    background-color: rgb(192, 172, 241);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }

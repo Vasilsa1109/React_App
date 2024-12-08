@@ -2,11 +2,14 @@
     background-color: rgb(209, 195, 239);
     border: 5px solid rgb(89, 69, 132);
     border-radius: 5px;
-    width: min-content;
+    width: 1600px;
+    height: 300px;
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 60px;
+    text-align: center;
 }
 .description{
     color: rgb(73, 43, 101);

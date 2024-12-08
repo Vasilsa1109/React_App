@@ -1,17 +1,22 @@
 
 import MyComponent from "./components/FirstComponent/MyComponent";
 
-
-
 function App(){
   return (
-    <div>
+    <div class="main">
       <h3>React App</h3>
-      <MyComponent  title="................ Some title" description="some description ............................... "/>
-      <MyComponent  title="................ Some title" description="some description ............................... "/>
-      <MyComponent  title="................ Some title" description="some description ............................... "/>
-      <MyComponent  title="................ Some title" description="some description ............................... "/>
-      <MyComponent  title="................ Some title" description="some description ............................... "/>
+      <MyComponent  
+        title=" Some title" 
+        description="some description ............................... "
+      />
+       <MyComponent  
+        title=" Some title" 
+        description="some description ............................... "
+      />
+       <MyComponent  
+        title="Some title" 
+        description="some description ............................... " 
+      />
     </div>
   )
 }
