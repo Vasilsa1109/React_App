@@ -1,6 +1,6 @@
 
 import MyComponent from "./components/FirstComponent/MyComponent";
-
+import Component_sum from "./components/Task_1/Component";
 function App(){
   return (
     <div class="main">
@@ -17,6 +17,7 @@ function App(){
         title="Some title" 
         description="some description ............................... " 
       />
+      <Component_sum />
     </div>
   )
 }
