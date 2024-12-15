@@ -24,13 +24,15 @@ import "./MyComponent.css";
 const MyComponent = ({title, description}) => {
     return (
         <div className="container">
-            <h1 className="title">{title}</h1>
-            <p className="description">{description}</p>
-            <Button
-                onClick={() => alert('Button was clicked')}
-            >
-                Click on
-            </Button>   
+            <div className="block1">
+                <h1 className="title">{title}</h1>
+                <p className="description">{description}</p>
+                <Button
+                    onClick={() => alert('Button was clicked')}
+                >
+                    Click on
+                </Button>  
+            </div>
             <Counter />
             <Counter2 />
         </div>

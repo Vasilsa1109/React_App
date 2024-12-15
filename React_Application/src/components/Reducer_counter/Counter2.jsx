@@ -1,10 +1,8 @@
 import React, { useReducer } from 'react';
 import Button from "../common/ClickButton/Button";
 
-// Определяем начальное состояние
 const initialState = { count: 0 };
 
-// Определяем редьюсер
 function reducer(state, action) {
     switch (action.type) {
         case 'increment':
@@ -22,7 +20,7 @@ const Counter2 = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
-        <div>
+        <div className="block1">
             <p>Счетчик: {state.count}</p>
             <Button onClick={() => dispatch({ type: 'increment' })}
             >
