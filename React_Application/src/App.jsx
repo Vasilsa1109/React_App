@@ -1,9 +1,10 @@
 
 import MyComponent from "./components/FirstComponent/MyComponent";
-import Component_sum from "./components/Task_1/Component";
+import Component_sum from "./components/Task_1/Component_sum";
+import Object_1 from "./components/Object/Object_1";
 function App(){
   return (
-    <div class="main">
+    <div className="main">
       <h3>React App</h3>
       <MyComponent  
         title=" Some title" 
@@ -18,6 +19,7 @@ function App(){
         description="some description ............................... " 
       />
       <Component_sum />
+      <Object_1 />
     </div>
   )
 }

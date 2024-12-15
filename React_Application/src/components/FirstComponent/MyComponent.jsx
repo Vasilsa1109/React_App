@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Button from "../common/ClickButton/Button";
 import Counter from "../counter/Counter";
+import Counter2 from "../Reducer_counter/Counter2";
 import "./MyComponent.css";
 
 // const MyComponent = (props) => {   
@@ -25,12 +26,13 @@ const MyComponent = ({title, description}) => {
         <div className="container">
             <h1 className="title">{title}</h1>
             <p className="description">{description}</p>
-            {/* <Button
+            <Button
                 onClick={() => alert('Button was clicked')}
             >
                 Click on
-            </Button>   */}
+            </Button>   
             <Counter />
+            <Counter2 />
         </div>
     );
 }
