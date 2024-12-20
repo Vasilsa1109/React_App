@@ -19,7 +19,7 @@ function App(){
         description="some description ............................... " 
       />
       <Component_sum />
-      <Object_1 />
+        <Object_1 />
     </div>
   )
 }

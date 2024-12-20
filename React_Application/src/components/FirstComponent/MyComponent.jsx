@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Button from "../common/ClickButton/Button";
-import Counter from "../counter/Counter";
+import Counter from "../Counter/Counter";
 import Counter2 from "../Reducer_counter/Counter2";
 import "./MyComponent.css";
 

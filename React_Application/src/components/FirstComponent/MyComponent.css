@@ -2,8 +2,8 @@
     background-color: rgb(209, 195, 239);
     border: 5px solid rgb(89, 69, 132);
     border-radius: 15px;
-    width: 1800px;
-    height: 500px;
+    width: 1200px;
+    height: max-content;
 }
 .description{
     color: rgb(73, 43, 101);
@@ -18,10 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
     text-align: center;
 }
 
 .block1{
     flex-direction: column;
+    gap: 10px;
 }

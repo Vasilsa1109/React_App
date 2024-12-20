@@ -16,10 +16,10 @@ const Counter = () => {
     useEffect(()=>{
         console.log("something 2")
      }, [count])
-    //если ничего не указывать в [], то будет вызываться один раз
+    //если ничего не указывать в [] - пустом массиве, то будет вызываться один раз
 
     return (
-        <div className="container">
+        <div id="container">
 
             <Button
                 onClick={() => setCount(count+1)}

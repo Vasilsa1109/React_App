@@ -7,11 +7,14 @@
     width: 0;
   }
   
-  .container {
-    display: block;
-    position: relative;
+  #container {
+    display: flex;
     cursor: pointer;
-    user-select: none;
+    gap: 20px;
+    border-left: 3px solid rgb(93, 59, 112);
+    border-right: 3px solid rgb(93, 59, 112);
+    margin: 10px;
+    padding: 20px;
   }
   
   svg {
