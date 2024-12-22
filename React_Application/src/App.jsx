@@ -2,6 +2,8 @@
 import MyComponent from "./components/FirstComponent/MyComponent";
 import Component_sum from "./components/Task_1/Component_sum";
 import Object_1 from "./components/Object/Object_1";
+import MainList from "./components/MainList/MainList";
+
 function App(){
   return (
     <div className="main">
@@ -19,11 +21,11 @@ function App(){
         description="some description ............................... " 
       />
       <Component_sum />
-        <Object_1 />
+      <Object_1 />
+      <MainList />
     </div>
   )
 }
-
 export default App;
 
 // import { useState } from 'react'
