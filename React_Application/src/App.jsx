@@ -3,6 +3,9 @@ import MyComponent from "./components/FirstComponent/MyComponent";
 import Component_sum from "./components/Task_1/Component_sum";
 import Object_1 from "./components/Object/Object_1";
 import MainList from "./components/MainList/MainList";
+import PackingList from "./components/DZ/Task_1";
+import PackingList2 from "./components/DZ/Task_2";
+import DrinkList from "./components/DZ/Task_3";
 
 function App(){
   return (
@@ -21,8 +24,15 @@ function App(){
         description="some description ............................... " 
       />
       <Component_sum />
+
       <Object_1 />
+
       <MainList />
+{/* dz */}
+      <PackingList />
+      <PackingList2 />
+      <DrinkList />
+
     </div>
   )
 }

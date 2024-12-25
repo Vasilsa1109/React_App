@@ -11,6 +11,10 @@
     border: none;
     cursor: pointer;
     margin: 10px;
+      font-family: "Rubik Vinyl", serif;
+      font-weight: 400;
+      font-style: normal; 
+      text-transform: uppercase;
   }
   
   .clickButton:hover::before {
