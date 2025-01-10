@@ -3,6 +3,10 @@ html, body{
     align-items: center;
     flex-direction: column;
     background-color: rgb(192, 172, 241);
+    font-family: "Ysabeau SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .main{
@@ -11,3 +15,4 @@ html, body{
     align-items: center;
     gap: 30px;
 }
+

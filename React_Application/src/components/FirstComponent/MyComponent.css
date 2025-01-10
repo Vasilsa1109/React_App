@@ -2,7 +2,7 @@
     background-color: rgb(209, 195, 239);
     border: 5px solid rgb(89, 69, 132);
     border-radius: 15px;
-    width: 1200px;
+    width: max-content;
     height: max-content;
 }
 .description{

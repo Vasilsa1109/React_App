@@ -3,7 +3,13 @@ import MyComponent from "./components/FirstComponent/MyComponent";
 import Component_sum from "./components/Task_1/Component_sum";
 import Object_1 from "./components/Object/Object_1";
 import MainList from "./components/MainList/MainList";
+<<<<<<< HEAD
 import AppForm from "./components/common/Form/Form";
+=======
+import PackingList from "./components/DZ/Task_1";
+import PackingList2 from "./components/DZ/Task_2";
+import DrinkList from "./components/DZ/Task_3";
+>>>>>>> e2ed5642ae6152a33cc9d9ee2bc01e7c2fe4ede1
 
 function App(){
   return (
@@ -22,9 +28,19 @@ function App(){
         description="some description ............................... " 
       />
       <Component_sum />
+
       <Object_1 />
+
       <MainList />
+<<<<<<< HEAD
       <AppForm />
+=======
+{/* dz */}
+      <PackingList />
+      <PackingList2 />
+      <DrinkList />
+
+>>>>>>> e2ed5642ae6152a33cc9d9ee2bc01e7c2fe4ede1
     </div>
   )
 }
