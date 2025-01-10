@@ -3,6 +3,7 @@ import MyComponent from "./components/FirstComponent/MyComponent";
 import Component_sum from "./components/Task_1/Component_sum";
 import Object_1 from "./components/Object/Object_1";
 import MainList from "./components/MainList/MainList";
+import AppForm from "./components/common/Form/Form";
 
 function App(){
   return (
@@ -23,6 +24,7 @@ function App(){
       <Component_sum />
       <Object_1 />
       <MainList />
+      <AppForm />
     </div>
   )
 }
