@@ -10,10 +10,17 @@ import "./Form.css";
 //     );
 
 // }
+const styles = {
+    container, input: {
+        color: "black",
+        fontSize: "18px"
+    }
+}
+
 
 const AppForm = () => {
 
-    const { register } =  useForm();
+    const { register, handleSubmit } =  useForm();
 
     function onSubmit(data) {
         console.log(data);

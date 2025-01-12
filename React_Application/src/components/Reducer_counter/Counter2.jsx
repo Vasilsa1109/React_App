@@ -21,7 +21,7 @@ const Counter2 = () => {
 
     return (
         <div className="block1">
-            <p>Счетчик: {state.count}</p>
+            <p>СЧЁТЧИК : <b> {state.count}</b></p>
             <Button onClick={() => dispatch({ type: 'increment' })}
             >
                 Увеличить

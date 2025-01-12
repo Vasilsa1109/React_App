@@ -1,44 +1,60 @@
- 
-import MyComponent from "./components/FirstComponent/MyComponent";
-import Component_sum from "./components/Task_1/Component_sum";
-import Object_1 from "./components/Object/Object_1";
-import MainList from "./components/MainList/MainList";
-import AppForm from "./components/common/Form/Form";
-import PackingList from "./components/DZ/Task_1";
-import PackingList2 from "./components/DZ/Task_2";
-import DrinkList from "./components/DZ/Task_3";
+import React from "react";
+import { BrowserRouter as Router, Route,  Routes } from "react-router-dom";
+import Home from './components/pages/Home/Home';
+import About from './components/pages/About/About';
+import Counter2 from './components/Reducer_counter/Counter2'
+// import MyComponent from "./components/FirstComponent/MyComponent";
+// import Component_sum from "./components/Task_1/Component_sum";
+// import Object_1 from "./components/Object/Object_1";
+// import MainList from "./components/MainList/MainList";
+// import AppForm from "./components/common/Form/Form";
+// import PackingList from "./components/DZ/Task_1";
+// import PackingList2 from "./components/DZ/Task_2";
+// import DrinkList from "./components/DZ/Task_3";
  
 function App(){
   return (
-    <div className="main"> 
-      <h3>React App</h3>
-      <MyComponent  
-        title=" Some title" 
-        description="some description ............................... "
-      />
-       <MyComponent  
-        title=" Some title" 
-        description="some description ............................... "
-      />
-       <MyComponent  
-        title="Some title" 
-        description="some description ............................... " 
-      />
-      <Component_sum />
-
-      <Object_1 />
-
-      <MainList />
-      <AppForm /> 
-{/* dz */}
-      <PackingList />
-      <PackingList2 />
-      <DrinkList />
-
-     </div>
-  ) 
+    <Router>
+      <Routes>
+        <Route  path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route  path="/counter" element={<Counter2 />} /> 
+      </Routes>
+    </Router>
+  )
 }
 export default App;
+
+
+
+
+{/* <div className="main"> 
+<h3>React App</h3>
+<MyComponent  
+  title=" Some title" 
+  description="some description ............................... "
+/>
+ <MyComponent  
+  title=" Some title" 
+  description="some description ............................... "
+/>
+ <MyComponent  
+  title="Some title" 
+  description="some description ............................... " 
+/>
+<Component_sum />
+
+<Object_1 />
+
+<MainList />
+<AppForm /> 
+{/* dz */}
+{/* <PackingList />
+<PackingList2 />
+<DrinkList />
+
+</div> */} 
+
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
