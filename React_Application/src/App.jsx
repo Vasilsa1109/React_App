@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Route,  Routes } from "react-router-dom";
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import Header from "./components/common/Header/Header";
-import Counter2 from './components/Reducer_counter/Counter2'; 
-import { NavLink } from "react-router"
+import Footer from "./components/common/Footer/Footer";
+import NotFound from "./components/pages/NotFound/NotFound";
+import Posts from "./components/pages/Posts/Posts";
+import PostDetail from "./components/pages/PostDetail/PostDetail";
+import './App.css'
 // import MyComponent from "./components/FirstComponent/MyComponent";
 // import Component_sum from "./components/Task_1/Component_sum";
 // import Object_1 from "./components/Object/Object_1";
@@ -17,26 +20,17 @@ import { NavLink } from "react-router"
 function App(){
   return (
     <Router>
+       <Header></Header>
+       
       <Routes>
         <Route  path="/" index element={<Home />} /> {/*страница по умолчанию */}
-        <Route path="about" element={<About />} />
-        <Route  path="counter" element={<Counter2 />} /> 
-        <Route  path="/header" element={<Header />} /> 
-      </Routes>
-      <NavLink to="/header" element={<Header />}>Header</NavLink> 
-      <br />
-        <NavLink to="/" end>Home Page</NavLink>
-        <br />
- <NavLink to="/about" style={({isActive}) => ({
-  color: isActive ? "#a2d9ce" : "#4f145c"
- })}
- >
-  <b>About Page</b>
-  </NavLink>
-  <br />
- <NavLink to="/counter">Counter Page</NavLink>  
-    </Router>
-
+        <Route path="/about" element={<About />} />
+        <Route component={<NotFound />} />
+        <Route path="/posts" element={<Posts />} />
+        <Route path="/posts/:id" element={<PostDetail />} />
+      </Routes> 
+      <Footer></Footer>
+      </Router>  
   )
 }
 export default App;

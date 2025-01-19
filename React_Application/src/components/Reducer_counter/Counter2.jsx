@@ -20,7 +20,8 @@ const Counter2 = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
-        <div className="block1">
+       
+        <div className="block1"> 
             <p>СЧЁТЧИК : <b> {state.count}</b></p>
             <Button onClick={() => dispatch({ type: 'increment' })}
             >
