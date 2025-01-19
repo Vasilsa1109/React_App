@@ -1,7 +1,8 @@
 import './Footer.css';
 const Footer = () => {
     return (
-        <div className="main">
+    <div className="wrapper">
+        <div class="content"></div>
         <footer className="footer-clean">
             <div className="container">
                 <div className="row justify-content-center">

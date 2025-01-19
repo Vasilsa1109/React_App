@@ -1,16 +1,15 @@
-html, body{
-    position: relative;
+.content{
+  padding-top: 120px;
 }
-
 .footer-clean {
-    position: absolute;
-    bottom: 0; 
-    width: 100%;
+  padding: 10px;
     background-color:#fff;
     box-shadow: 0 15px 8px 0 rgba(107, 27, 131, 0.2);
     z-index: 99;
-    padding-top: 30px;
-    border-top: 3px solid black;
+    border-top: 5px solid rgb(79, 49, 98);
+  	position: fixed;
+	bottom: 0;
+	width: 100%;
   }
 
   .footer-clean h3 {

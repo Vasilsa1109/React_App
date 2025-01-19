@@ -20,8 +20,7 @@ import './App.css'
 function App(){
   return (
     <Router>
-       <Header></Header>
-       
+       <Header></Header> 
       <Routes>
         <Route  path="/" index element={<Home />} /> {/*страница по умолчанию */}
         <Route path="/about" element={<About />} />
@@ -35,6 +34,7 @@ function App(){
 }
 export default App;
 
+//Все глобальные константы пишутся капсом
 // Build Bootstrap with React
 // https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx
 

@@ -6,3 +6,20 @@
   align-items: center;
   gap: 30px;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+.content {
+	padding-bottom: 90px;
+}
+
