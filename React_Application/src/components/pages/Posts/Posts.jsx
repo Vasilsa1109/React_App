@@ -1,4 +1,4 @@
-// src/pages/Posts.jsx
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -6,8 +6,12 @@ import './Posts.css';
 import Card from '../../common/Card/Card';
 const Posts = () => {
     const posts = [
-        { id: 1, title: 'First Post' },
+        { id: 1, title: 'First Post',  },
         { id: 2, title: 'Second Post' },
+        { id: 3, title: 'Third Post' },
+        { id: 4, title: 'Fourth Post' },
+        { id: 5, title: 'Fifth Post' },
+        { id: 6, title: 'Sixth Post' },
     ];
 
     return (

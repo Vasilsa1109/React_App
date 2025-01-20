@@ -24,7 +24,7 @@ function App(){
       <Routes>
         <Route  path="/" index element={<Home />} /> {/*страница по умолчанию */}
         <Route path="/about" element={<About />} />
-        <Route component={<NotFound />} />
+        <Route path="*" element={<NotFound />}/>
         <Route path="/posts" element={<Posts />} />
         <Route path="/posts/:id" element={<PostDetail />} />
       </Routes> 
