@@ -1,9 +1,12 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 import './Posts.css';
 import Card from '../../common/Card/Card';
+import lab from '../../../assets/productivity_lab.png';
+import yout_academy from  '../../../assets/youtuber_academy.png';
+import table from  '../../../assets/table.avif';
+
 const Posts = () => {
     const posts = [
         { id: 1, title: 'First Post',  },
@@ -25,12 +28,9 @@ const Posts = () => {
                 ))}
             </ul>
             <section className="articles">
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
+                <Card image={lab} title={'Our laboratory'} ></Card>
+                <Card image={yout_academy} title={'Youtube academy'}></Card>
+                <Card image={table} title={'Just table'}></Card>
             </section>
         </div>
     );

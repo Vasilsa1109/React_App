@@ -1,21 +1,10 @@
 import { NavLink } from "react-router";
 
-const styleCard = {
-  display: 'flex', 
-  alignItems: "center", 
-  flexDirection: 'column',
-   gap: '15px', 
-   fontSize: '18px', 
-   backgroundColor: '#dee0ff', 
-   padding: '20px',
-  borderRadius: '10px'
-}
-
-const Card = ({ title, description, img}) => {
+const Card = ({ title, description, image}) => {
     return  <article>
     <div className="article-wrapper">
       <figure>
-        <img src={img} alt="" />
+        <img src={image} alt="" />
       </figure>
       <div className="article-body">
         <h2>{title}</h2>

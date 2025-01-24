@@ -1,5 +1,6 @@
 
 import { useParams } from 'react-router-dom';
+import '../Posts/Posts.css'
 import Card from '../../common/Card/Card';
 const PostDetail = () => {
     const { id } = useParams();

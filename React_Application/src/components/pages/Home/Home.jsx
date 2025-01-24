@@ -1,5 +1,7 @@
+import Form from "../../common/Form/Form";
 import Counter from "../../counter/Counter";
 import Person from "../../Person/Person";
+
 const Home = () => {
     return (
           
@@ -9,7 +11,7 @@ const Home = () => {
             <Person></Person>
                   <h3>Just a counter</h3>
             <Counter/>
-
+            <Form />
             </div>
     );
 };
