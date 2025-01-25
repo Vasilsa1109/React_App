@@ -4,15 +4,15 @@ const styleCard = {
     flexDirection: 'column',
      gap: '15px', 
      fontSize: '18px', 
-     backgroundColor: '#dee0ff', 
+     backgroundColor: '#eab201', 
      padding: '20px',
-    borderRadius: '10px'
+    borderRadius: '10px',
 }
 const MiniCard = ({ title, description, img}) => {
     return <div style={styleCard}>
         <h3>{title}</h3>
         <img src={img} alt="" style={{width: '200px', height: 'auto'}}/>
-        <p>{description} </p>
+        <b>{description} </b>
     </div>
 };
 

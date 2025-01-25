@@ -5,10 +5,20 @@ const Header = () => {
     return (
 <header className="Header">
 <img src="https://reactjs.org/logo-og.png" alt="React Image" className="Logo" />
-<NavLink to="/" end >Home Page</NavLink>
-<NavLink to="/posts"  >Posts</NavLink>
+<NavLink  to="/" end style={({isActive}) => ({
+  color: isActive ? "white" : "#b66b13"
+ })}
+ >
+  <b>Home Page</b>
+  </NavLink>
+<NavLink  to="/posts" style={({isActive}) => ({
+  color: isActive ? "white" : "#b66b13"
+ })}
+ >
+  <b>Posts Page</b>
+  </NavLink>
  <NavLink to="/about" style={({isActive}) => ({
-  color: isActive ? "white" : "black"
+  color: isActive ? "white" : "#b66b13"
  })}
  >
   <b>About Page</b>

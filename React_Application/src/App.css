@@ -1,5 +1,5 @@
 html, body{
-    background-color: rgb(208, 197, 237);
+    background-color: #fbd433;
     font-family: "Ysabeau SC", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -32,3 +32,12 @@ body {
 	padding-bottom: 90px;
 }
 
+a{
+  color: #e5af2f;
+  font-weight: 600;
+  font-size: x-large;
+  text-decoration: none;
+}
+a:hover{
+  color: #81450a;
+}
