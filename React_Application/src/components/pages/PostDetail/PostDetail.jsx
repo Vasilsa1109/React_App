@@ -1,7 +1,8 @@
 
 import { useParams } from 'react-router-dom';
-import '../Posts/Posts.css'
-import Card from '../../common/Card/Card';
+import '../Posts/Posts.css';
+import Component_sum from '../../Task_1/Component_sum';
+import MainList from '../../MainList/MainList';
 const PostDetail = () => {
     const { id } = useParams();
     
@@ -9,6 +10,8 @@ const PostDetail = () => {
         <div className='main'>
             <h1>Post Detail</h1>
             <p>It's a post with ID = {id}</p>
+             <MainList />
+             <Component_sum />
         </div>
     );
 };

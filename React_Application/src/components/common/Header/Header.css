@@ -16,13 +16,3 @@
   aspect-ratio: 2/1;
   max-height: 100px;
 }
-
-a{
-  color: #e5af2f;
-  font-weight: 600;
-  font-size: x-large;
-  text-decoration: none;
-}
-a:hover{
-  color: #81450a;
-}
