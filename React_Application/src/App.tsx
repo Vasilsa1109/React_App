@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import { Outlet } from "react-router";
 import Header from "./components/common/Header/Header";
 import Footer from "./components/common/Footer/Footer";
 import './App.css'
 
-function App() {
+const App:FC = ()  =>{
   return (
     <div>
       <Header />

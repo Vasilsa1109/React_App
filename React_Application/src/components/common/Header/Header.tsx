@@ -1,7 +1,8 @@
 
+import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-const Header = () => {
+const Header:FC = () => {
     return (
 <header className="Header">
 <img src="https://reactjs.org/logo-og.png" alt="React Image" className="Logo" />

@@ -1,6 +1,7 @@
+import { FC } from "react";
 import { NavLink } from "react-router-dom"; 
 
-const Card = ({ id, title, description, image }) => { 
+const Card:FC = ({ id, title, description, image }) => { 
     return ( 
         <article> 
             <div className="article-wrapper"> 

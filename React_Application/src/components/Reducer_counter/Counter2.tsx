@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { FC, useReducer } from 'react';
 import Button from "../common/ClickButton/Button";
 
 const initialState = { count: 0 };
@@ -16,7 +16,7 @@ function reducer(state, action) {
     }
 }
 
-const Counter2 = () => {
+const Counter2:FC = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (

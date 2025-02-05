@@ -3,7 +3,8 @@ import youtuber from '../../../assets/youtuber_academy.png'
 import book from '../../../assets/book.webp'
 import MiniCard from '../../common/MiniCard/MiniCard';
 import hero from '../../../assets/img5.webp';
-const About = () => {
+import { FC } from 'react';
+const About:FC = () => {
     return (
         <div className="main">
             <div className="Ali" style={{display: 'flex', gap: '20px', flexDirection: 'column', alignItems: 'center', backgroundColor: '#f0de97', padding: '20px'}}>

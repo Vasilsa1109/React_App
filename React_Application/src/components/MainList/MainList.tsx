@@ -1,6 +1,6 @@
 import "./MainList.css";
 
-const MainList = ({results=2}) => {
+const MainList:import("react").FC = ({results=2}) => {
     return (
         <div>
             <h1>List</h1>

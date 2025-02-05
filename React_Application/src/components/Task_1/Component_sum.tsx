@@ -1,7 +1,8 @@
 
+import { FC } from "react";
 import "./Component_sum.css";
 
-const Component_sum = () => {
+const Component_sum:FC = () => {
     var array_numb = [10, 22, 5, -19];
     function checkNumb(number) {
     if (number % 2 == 0) 

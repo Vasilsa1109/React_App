@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import './Footer.css';
-const Footer = () => {
+const Footer:FC = ()  =>{
     return (
     <div className="wrapper">
-        <div class="content"></div>
+        <div className="content"></div>
         <footer className="footer-clean">
             <div className="container">
                 <div className="row justify-content-center">
@@ -30,7 +31,7 @@ const Footer = () => {
                             <li><a href="#">Benefits</a></li>
                         </ul>
                     </div>
-                    <div className="col-lg-3 item social"><a href="#"><i className="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <div className="col-lg-3 item social"><a href="#"><i className="icon ion-social-facebook"></i></a><a href="#"><i className="icon ion-social-twitter"></i></a><a href="#"><i className="icon ion-social-snapchat"></i></a><a href="#"><i className="icon ion-social-instagram"></i></a>
                         <p className="copyright">Company Name © 2025</p>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
+import { FC } from "react";
 import Person from "../../Person/Person";
 import './SuccessLogin.css'
-const SuccessLogin = () => {
+const SuccessLogin:FC = () => {
     return (
           
         <div className="main">  

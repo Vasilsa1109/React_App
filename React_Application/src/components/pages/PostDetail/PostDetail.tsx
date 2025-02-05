@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import '../Posts/Posts.css';
 import Component_sum from '../../Task_1/Component_sum';
 import MainList from '../../MainList/MainList';
-const PostDetail = () => {
+import { FC } from 'react';
+const PostDetail:FC = () => {
     const { id } = useParams();
     
     return (

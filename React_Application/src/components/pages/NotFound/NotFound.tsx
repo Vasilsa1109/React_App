@@ -1,7 +1,8 @@
 
 import './NotFound.css';
 import { NavLink } from 'react-router';
-const NotFound = () => {
+import { FC } from 'react';
+const NotFound:FC = () => {
     return (
         <div  className="main error">
             <h1>404 Not Found</h1>

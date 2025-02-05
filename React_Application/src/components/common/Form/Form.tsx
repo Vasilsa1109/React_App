@@ -1,8 +1,9 @@
 import "./Form.css";
 import { useNavigate } from "react-router";
 import { useForm } from "react-hook-form";
+import { FC } from "react";
 
-const Form = () => {
+const Form:FC = () => {
 
     const { register, handleSubmit, formState: { errors} } 
     = useForm();

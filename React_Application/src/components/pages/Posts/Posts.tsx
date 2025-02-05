@@ -8,7 +8,7 @@ import table from  '../../../assets/table.avif';
 import mindfulness from '../../../assets/mindfulness.avif'  
 import img3 from  '../../../assets/img3.avif';
 import img2 from  '../../../assets/img2.avif';
-const Posts = () => {  
+const Posts:FC = () => {  
     const posts = [  
         { id: 1, title: 'First Post', description: 'Description of the first post.', image: lab },  
         { id: 2, title: 'Second Post', description: 'Description of the second post.', image: yout_academy },  

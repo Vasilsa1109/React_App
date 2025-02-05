@@ -2,9 +2,9 @@
 import "./Person.css"; 
 import hero from '../../assets/img4.webp';
 import Button from "../common/ClickButton/Button"; 
-import React, { useState } from "react"; 
+import React, { FC, useState } from "react"; 
 
-const Person = () => { 
+const Person:FC = () => { 
     const [support, giveSupport] = useState(0); 
 
     const handleClick = () => {
