@@ -8,7 +8,7 @@ const About:FC = () => {
     return (
         <div className="main">
             <div className="Ali" style={{display: 'flex', gap: '20px', flexDirection: 'column', alignItems: 'center', backgroundColor: '#f0de97', padding: '20px'}}>
-            <img src={hero} alt="" style={{width: '300px'}} />
+            <img src={hero} alt="" style={{width: '300px', height: '300px'}} />
             <h1>About Page</h1>
             <h2>Hey, I’m Ali.</h2> 
             <h3>I’m a Doctor turned Entrepreneur, YouTuber, and the author

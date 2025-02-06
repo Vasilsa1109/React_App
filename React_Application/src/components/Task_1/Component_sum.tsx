@@ -32,7 +32,11 @@ var result = new_array.reduce(function(sum, current) {
     return (
       <div>
           <h3>Значение суммы чётных элементов: {result} </h3>
-          <marquee behavior="alternate"  ><img src="https://static.vecteezy.com/system/resources/previews/036/050/868/non_2x/ai-generated-green-snake-isolated-on-transparent-background-free-png.png" alt="" /></marquee>
+          <div className="marquee">
+                <div className="marquee-content">
+                    <img src="https://static.vecteezy.com/system/resources/previews/036/050/868/non_2x/ai-generated-green-snake-isolated-on-transparent-background-free-png.png" alt="" />
+                </div>
+            </div>
           <h3>Значение элементов больше 0: {result2}</h3>
         </div>
     );
