@@ -1,18 +1,23 @@
-import { FC } from "react";
-import './SuccessLogin.css'
-const SuccessLogin:FC = () => {
-    return (
+import { FC } from "react"; 
+import "./MainList.css"; 
 
-        <div className="main">  
-            <h1>Thank you for loginning</h1>
-      <div className="card">
-      <div className="check">
-        <i className="checkmark">✓</i>
-      </div>
-        <p>We received your purchase request;<br/> we'll be in touch shortly!</p> 
-      </div>
-      </div>        
-    );
-};
+interface MainListProps {
+    results: any[]; 
+}
 
-export default SuccessLogin;
+const MainList: FC<MainListProps> = ({ results = [] }) => { 
+    return ( 
+        <div> 
+            <h1>List</h1> 
+            <p>There is a list of elements</p> 
+            {results.length > 0 ? ( 
+                <Items items={results} /> 
+            ) : ( 
+                <marquee>There is no data</marquee> 
+            )} 
+        </div> 
+    ); 
+}; 
+
+export default MainList;
+

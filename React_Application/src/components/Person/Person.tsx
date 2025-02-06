@@ -2,7 +2,7 @@
 import "./Person.css"; 
 import hero from '../../assets/img4.webp';
 import Button from "../common/ClickButton/Button"; 
-import React, { FC, useState } from "react"; 
+import { FC, useState } from "react"; 
 
 const Person:FC = () => { 
     const [support, giveSupport] = useState(0); 

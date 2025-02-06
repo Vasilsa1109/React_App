@@ -1,4 +1,3 @@
-
 import { useParams } from 'react-router-dom';
 import '../Posts/Posts.css';
 import Component_sum from '../../Task_1/Component_sum';

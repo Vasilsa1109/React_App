@@ -1,6 +1,5 @@
 import Button from "../common/ClickButton/Button";
-import Counter from "../../components/counter/Counter"
-import Counter2 from "../Reducer_counter/Counter2";
+import Counter from "../../components/counter/Counter";
 import "./MyComponent.css";
 import { FC} from "react"; 
 
@@ -22,7 +21,6 @@ const MyComponent:FC <ComponentProps> = ({title, description}) => {
                 </Button>  
             </div>
             <Counter />
-            <Counter2 />
         </div>
     );
 }
