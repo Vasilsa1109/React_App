@@ -1,4 +1,4 @@
-import React, { useEffect, useState, FC } from "react";
+import  { useEffect, useState, FC } from "react";
 import apiInstance from "../api/apiInstance";
 
 interface User {

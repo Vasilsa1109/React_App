@@ -3,13 +3,20 @@ import { useNavigate } from "react-router";
 import { useForm } from "react-hook-form";
 import { FC } from "react";
 
+interface FormData {
+    name: string;
+    email: string;
+    password: string;
+}
+
 const Form:FC = () => {
 
     const { register, handleSubmit, formState: { errors} } 
-    = useForm();
+    = useForm<FormData>();  
+
     const navigate = useNavigate();
 
-    const onSubmit = (data) => {
+    const onSubmit = (data: FormData) => {
         console.log("Form Submitted:", data);
         navigate('/login');
     };
@@ -53,11 +60,11 @@ const Form:FC = () => {
         
                         <input 
                             {...register("password", {
-                                required: "Password is required",
-                                length: 8,
+                                required: "Password is required"
                             })}
                             className="input"
                             placeholder="Password"
+                            type="password"
                         />
                         {errors.password && <p className="error">{errors.password.message}</p>}
                         

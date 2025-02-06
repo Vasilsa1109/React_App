@@ -4,6 +4,7 @@ import book from '../../../assets/book.webp'
 import MiniCard from '../../common/MiniCard/MiniCard';
 import hero from '../../../assets/img5.webp';
 import { FC } from 'react';
+
 const About:FC = () => {
     return (
         <div className="main">
@@ -26,24 +27,13 @@ Feel-Good Productivity</h3>
 </ul>
 <div className="card-container" style={{display: 'flex', gap: '100px', flexDirection: 'column'}}>
 <MiniCard title={'Feel Good Productivity'} img={book} description={
-        <>
-            My New York Times Bestselling book about how to <br />
-             do more of what matters to you, <br />
-            while enjoying the journey along the way.
-        </>
+            'My New York Times Bestselling book about how to do more of what matters to you, while enjoying the journey along the way'
     }></MiniCard>
 <MiniCard title={'Productivity Lab'} img={lab} description={
-        <>
-           My community of ambitious entrepreneurs, creators and professionals. <br />
-            We help you double your productivity <br />
-             while having fun and making friends along the way.
-        </>
+            'My community of ambitious entrepreneurs, creators and professionals.  We help you double your productivity while having fun and making friends along the way.'
     }></MiniCard>
     <MiniCard title={'YouTuber Academy'} img={youtuber} description={
-        <>
-          My courses and programmes about<br />
-           how to grow a life-changing YouTube channel.
-        </>
+          'My courses and programmes about how to grow a life-changing YouTube channel.'
     }></MiniCard>
 </div>
         </div>

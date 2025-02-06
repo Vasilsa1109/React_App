@@ -1,27 +1,15 @@
-import PropTypes from "prop-types";
 import Button from "../common/ClickButton/Button";
-import Counter from "../Counter/Counter";
+import Counter from "../../components/counter/Counter"
 import Counter2 from "../Reducer_counter/Counter2";
 import "./MyComponent.css";
+import { FC} from "react"; 
 
-// const MyComponent = (props) => {   
-//       <div>
-//         <h1>{props.title}</h1>
-//         <p>{props.description}</p>
-//       </div>
-//     const CompProps = {
-//         title: "Default title", 
-//         description: "Default description"
-//     }
-//     return (
-//         <div className="container">
-//             <h1 className="title">{CompProps.title}</h1>
-//             <p className="description">{CompProps.description}</p>
-//         </div>
-//     );
-//   }
+interface ComponentProps{
+    title: string,
+    description: string
+}
 
-const MyComponent = ({title, description}) => {
+const MyComponent:FC <ComponentProps> = ({title, description}) => {
     return (
         <div className="container">
             <div className="block1">
@@ -38,11 +26,6 @@ const MyComponent = ({title, description}) => {
         </div>
     );
 }
-  MyComponent.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-  }
-
   export default MyComponent;
 
  

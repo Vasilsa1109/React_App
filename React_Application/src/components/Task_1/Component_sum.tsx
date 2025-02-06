@@ -1,31 +1,27 @@
-
 import { FC } from "react";
 import "./Component_sum.css";
 
-const Component_sum:FC = () => {
-    var array_numb = [10, 22, 5, -19];
-    function checkNumb(number) {
-    if (number % 2 == 0) 
-      return true;
-    else return false;
-  }
-  function checkNumb2(number) {
-    if (number > 0) 
-      return true;
-    else return false;
-  }
+const Component_sum: FC = () => {
+    const array_numb: number[] = [10, 22, 5, -19];
 
-  let new_array = array_numb.filter(checkNumb);
+    function checkNumb(number: number): boolean {
+        return number % 2 === 0;
+    }
+
+    function checkNumb2(number: number): boolean {
+        return number > 0;
+    }
+
+    const new_array: number[] = array_numb.filter(checkNumb);
     console.log(new_array);
 
-var result = new_array.reduce(function(sum, current) {
-  return sum + current;
-}, 0);
+    const result: number = new_array.reduce((sum: number, current: number) => {
+        return sum + current;
+    }, 0);
 
+    const new_array2: number[] = array_numb.filter(checkNumb2);
 
-  let new_array2 = array_numb.filter(checkNumb2);
-
-    var result2 = new_array2.reduce(function(sum2, current2) {
+    const result2: number = new_array2.reduce((sum2: number, current2: number) => {
         return sum2 + current2;
     }, 0);
     

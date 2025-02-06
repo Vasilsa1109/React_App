@@ -57,8 +57,9 @@ article {
   }
   
   article a:focus {
-    border: 5px solid #483401;
+    background-color:#4834016c;
     padding: 5px;
+    border-radius: 10px;
   }
   
   article a .icon {

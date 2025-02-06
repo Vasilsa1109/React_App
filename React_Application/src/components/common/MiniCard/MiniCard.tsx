@@ -1,19 +1,15 @@
 import { FC } from "react";
-
-const styleCard = {
-    display: 'flex', 
-    alignItems: "center", 
-    flexDirection: 'column',
-     gap: '15px', 
-     fontSize: '18px', 
-     backgroundColor: '#eab201', 
-     padding: '20px',
-    borderRadius: '10px',
+import './MiniCard.css'
+interface MiniCardProps { 
+    title: string; 
+    description: string; 
+    img: string; 
 }
-const MiniCard:FC = ({ title, description, img}) => {
-    return <div style={styleCard}>
+
+const MiniCard:FC<MiniCardProps> = ({ title, description, img}) => {
+    return <div className="mini-card">
         <h3>{title}</h3>
-        <img src={img} alt="" style={{width: '200px', height: 'auto'}}/>
+        <img src={img} alt=""/>
         <b>{description} </b>
     </div>
 };

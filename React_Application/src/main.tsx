@@ -5,7 +5,6 @@ import About from './components/pages/About/About';
 import NotFound from "./components/pages/NotFound/NotFound";
 import Posts from "./components/pages/Posts/Posts";
 import PostDetail from "./components/pages/PostDetail/PostDetail";
-// import Counter from './components/counter/Counter';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
@@ -18,7 +17,6 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: '/', element: <Home /> },
-      // { path: '/counter', element: <Counter /> },
       { path: "/about", element: <About />} ,
       {path: "*", element: <NotFound />},
       {path: "/posts", element: <Posts />} ,
