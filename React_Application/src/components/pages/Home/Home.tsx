@@ -1,4 +1,3 @@
-import UsersList from "../../UsersList";
 import { FC } from "react";
 import Form from "../../common/Form/Form";
 import Counter from "../../counter/Counter";
@@ -13,7 +12,6 @@ const Home:FC = () => {
             <Person></Person>
                   <h3>Just a counter</h3>
              <Counter/> 
-            <UsersList/>
             <UserCard name="Alex" age={30} isOnline={true}/>
             <UserCard name="Maria"  isOnline={false}/>
             <UserCard name="Marianna" age={34} isOnline={false}/>

@@ -10,12 +10,12 @@ import img3 from  '../../../assets/img3.avif';
 import img2 from  '../../../assets/img2.avif';
 const Posts:FC = () => {  
     const posts = [  
-        { id: 1, title: 'First Post', description: 'Description of the first post.', image: lab },  
-        { id: 2, title: 'Second Post', description: 'Description of the second post.', image: yout_academy },  
-        { id: 3, title: 'Third Post', description: 'Description of the third post.', image: table },  
-        { id: 4, title: 'Fourth Post', description: 'Description of the fourth post.', image: mindfulness },  
-        { id: 5, title: 'Fifth Post', description: 'Description of the fifth post.', image: img3 },  
-        { id: 6, title: 'Sixth Post', description: 'Description of the sixth post.', image: img2 },  
+        { id: 12222, title: 'First Post', description: 'Description of the first post.', image: lab },  
+        { id: 2567474, title: 'Second Post', description: 'Description of the second post.', image: yout_academy },  
+        { id: 37467, title: 'Third Post', description: 'Description of the third post.', image: table },  
+        { id: 4764, title: 'Fourth Post', description: 'Description of the fourth post.', image: mindfulness },  
+        { id: 5676, title: 'Fifth Post', description: 'Description of the fifth post.', image: img3 },  
+        { id: 6676, title: 'Sixth Post', description: 'Description of the sixth post.', image: img2 },  
     ];  
   
     return (  
